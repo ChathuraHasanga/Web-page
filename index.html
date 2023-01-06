@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My web design</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        
+        <br><br>
+        <header>
+            <label id="dark-change"></label>
+        </header>
+        <main>
+        <h1 id="heading">Let's visit Sri Lanka</h1>
+        <div class="first">
+        <div class="pictheme"><img src="sigiri.jpg" alt="sigiriya" class="pics">Sigiriya</div>
+        <div class="pictheme"><img src="trelic.jpg" alt="Tooth Relic" class="pics">Tooth Relic</div>
+        <div class="pictheme"><img src="pinnewela.jpg" alt="Pinnewela elephant orphanage" class="pics">Pinnewela elephant orphanage</div>
+        <div class="pictheme"><img src="gangaramaya.jpg" alt="Gangaramaya Temple" class="pics">Gangaramaya Temple</div>
+        <div class="pictheme"><img src="sinharaja.jpg" alt="Sinharajaya Rain Forest" class="pics">Sinharajaya Rain Forest</div>
+        </div>
+        <br>
+        <div class="olist">
+        <h2>Above places names here</h2>
+        <ol>
+            <li>Sigiriya</li>
+            <li>Tooth Relic</li>
+            <li>Pinnawela elephant orphanage</li>
+            <li>Gangaramaya Temple</li>
+            <li>Sinharaja Rain Forest</li>
+        </ol>
+        </div>
+        <br><br>
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+
+        <table>
+            <tr>
+                <th>Place</th>
+                <th>District</th>
+                <th>Province</th>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Sigiriya" target="_blank">Sigiriya</a></td>
+                <td>Matale</td>
+                <td>Central</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Temple_of_the_Tooth" target="_blank">Tooth Relic</a></td>
+                <td>Trincomalee</td>
+                <td>Central</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Pinnawala_Elephant_Orphanage" target="_blank">Pinnawela elephant orphanage</a></td>
+                <td>Kegalle</td>
+                <td>Sabaragamuwa</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Gangaramaya_Temple" target="_blank">Gangaramaya Temple</a></td>
+                <td>Colombo</td>
+                <td>Western</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve" target="_blank">Sinharaja Rain Forest</a></td>
+                <td>Rathnapura</td>
+                <td>Sabaragamuwa</td>
+            </tr>
+        </table>
+
+        <h2>Let's check environment temperature</h2>
+        <div class="temp">
+        <script>
+            function convertToFahrenheit() {
+              var fahRenheit = 1.8 * document.getElementById("input").value + 32;
+      
+              document.getElementById("result").innerHTML = fahRenheit;
+            }
+        </script>
+        <p>Enter Celsius value :</p>
+        <input id="input" />
+        <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+        <p id="result"></p>
+        </div>
+
+        <script>
+            var content = document.getElementsByTagName('body')[0];
+            var darkMode = document.getElementById('dark-change');
+            darkMode.addEventListener('click', function(){
+                darkMode.classList.toggle('active');
+                content.classList.toggle('night');
+            })
+        </script>
+        </main>
+    </body>
+</html>

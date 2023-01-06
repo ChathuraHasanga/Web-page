@@ -1,0 +1,125 @@
+body{
+    width: 100%;
+    height: auto;
+    /*background-color: rgb(237, 230, 127);*/
+    margin: 0;
+    padding: 0;
+}
+.pics{
+    width: 280px;
+    height: 300px;
+    padding: 3px;
+}
+#heading{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(50, 73, 205);
+}
+.pictheme{
+    width: 286px;
+    height: 350px;
+    float: left;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(110, 39, 13);
+}
+.olist{
+    display: block;
+    float: left;
+}
+.first{
+    display: block;
+}
+
+table,tr,td{
+    border: 1px solid black;
+}
+
+td,tr{
+    color: darkgreen;
+}
+.temp{
+    background-color: rgb(24, 222, 80);
+    width: 350px;
+    height: 100px;
+}
+/*
+main{
+    margin: 1vh 1%;
+}
+*/
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+label::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #000;
+    transition: 0.4s;
+}
+
+label.active::before{
+    left: 24px;
+    background: #fff;
+}
+
+body.night{
+    background: #000;
+    color: #fff;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
